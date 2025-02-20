@@ -41,3 +41,5 @@ elif 'snowy' in weather_data['condition'].lower():
     set_background("assets/snow.jpg")
 elif 'few clouds' in weather_data['condition'].lower():
     set_background("assets/sun.jpg")
+else:
+    set_background("assets/default.jpg")
