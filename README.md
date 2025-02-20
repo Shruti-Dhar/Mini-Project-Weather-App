@@ -96,7 +96,7 @@ weather_app/
 Pull requests are welcome! Please follow the guidelines before submitting contributions.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. DAS
 
 ---
 🚀 **Developed with ❤️ using Python & Streamlit** 🚀
