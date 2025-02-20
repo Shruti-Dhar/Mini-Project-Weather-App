@@ -23,11 +23,21 @@ def set_background(image_path):
         unsafe_allow_html=True
     )
 
-# Set Background
-set_background("assets/background.jpg")
-
 city = city_input()
 
 if city:
     weather_data = get_weather_data(city)
     display_weather_info(weather_data)
+
+if 'broken clouds' in weather_data['condition'].lower():
+    set_background("assets/cloudy.jpg")
+elif 'overcast clouds' in weather_data['condition'].lower():
+    set_background("assets/cloudy.jpg")
+elif 'clear sky' in weather_data['condition'].lower():
+    set_background("assets/sun.jpg")
+elif 'haze' in weather_data['condition'].lower():
+    set_background("assets/rain.jpg")
+elif 'snowy' in weather_data['condition'].lower():
+    set_background("assets/snow.jpg")
+elif 'few clouds' in weather_data['condition'].lower():
+    set_background("assets/sun.jpg")

@@ -1,5 +1,6 @@
 import streamlit as st
 from datetime import datetime
+from modules.api_handler import get_weather_data
 
 def display_weather_info(weather_data):
     """
